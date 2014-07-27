@@ -17,8 +17,6 @@
 		E70F678919857DC10073761D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F678819857DC10073761D /* XCTest.framework */; };
 		E70F678A19857DC10073761D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F676F19857DC10073761D /* Foundation.framework */; };
 		E70F678B19857DC10073761D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F677319857DC10073761D /* UIKit.framework */; };
-		E70F679319857DC10073761D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E70F679119857DC10073761D /* InfoPlist.strings */; };
-		E70F679519857DC10073761D /* NerdFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E70F679419857DC10073761D /* NerdFeedTests.m */; };
 		E70F67A019857F140073761D /* BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70F679F19857F140073761D /* BNRCoursesViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +44,6 @@
 		E70F678119857DC10073761D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E70F678719857DC10073761D /* NerdFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NerdFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70F678819857DC10073761D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E70F679019857DC10073761D /* NerdFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NerdFeedTests-Info.plist"; sourceTree = "<group>"; };
-		E70F679219857DC10073761D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E70F679419857DC10073761D /* NerdFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdFeedTests.m; sourceTree = "<group>"; };
 		E70F679E19857F140073761D /* BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCoursesViewController.h; sourceTree = "<group>"; };
 		E70F679F19857F140073761D /* BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCoursesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				E70F677519857DC10073761D /* NerdFeed */,
-				E70F678E19857DC10073761D /* NerdFeedTests */,
 				E70F676E19857DC10073761D /* Frameworks */,
 				E70F676D19857DC10073761D /* Products */,
 			);
@@ -110,12 +104,10 @@
 		E70F677519857DC10073761D /* NerdFeed */ = {
 			isa = PBXGroup;
 			children = (
-				E70F677E19857DC10073761D /* BNRAppDelegate.h */,
-				E70F677F19857DC10073761D /* BNRAppDelegate.m */,
-				E70F678119857DC10073761D /* Images.xcassets */,
-				E70F677619857DC10073761D /* Supporting Files */,
 				E70F679E19857F140073761D /* BNRCoursesViewController.h */,
 				E70F679F19857F140073761D /* BNRCoursesViewController.m */,
+				E70F678119857DC10073761D /* Images.xcassets */,
+				E70F677619857DC10073761D /* Supporting Files */,
 			);
 			path = NerdFeed;
 			sourceTree = "<group>";
@@ -123,28 +115,12 @@
 		E70F677619857DC10073761D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E70F677E19857DC10073761D /* BNRAppDelegate.h */,
+				E70F677F19857DC10073761D /* BNRAppDelegate.m */,
 				E70F677719857DC10073761D /* NerdFeed-Info.plist */,
 				E70F677819857DC10073761D /* InfoPlist.strings */,
 				E70F677B19857DC10073761D /* main.m */,
 				E70F677D19857DC10073761D /* NerdFeed-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E70F678E19857DC10073761D /* NerdFeedTests */ = {
-			isa = PBXGroup;
-			children = (
-				E70F679419857DC10073761D /* NerdFeedTests.m */,
-				E70F678F19857DC10073761D /* Supporting Files */,
-			);
-			path = NerdFeedTests;
-			sourceTree = "<group>";
-		};
-		E70F678F19857DC10073761D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E70F679019857DC10073761D /* NerdFeedTests-Info.plist */,
-				E70F679119857DC10073761D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70F679319857DC10073761D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70F679519857DC10073761D /* NerdFeedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +248,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E70F677919857DC10073761D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E70F679119857DC10073761D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E70F679219857DC10073761D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
