@@ -18,6 +18,7 @@
 		E70F678A19857DC10073761D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F676F19857DC10073761D /* Foundation.framework */; };
 		E70F678B19857DC10073761D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F677319857DC10073761D /* UIKit.framework */; };
 		E70F67A019857F140073761D /* BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70F679F19857F140073761D /* BNRCoursesViewController.m */; };
+		E70F67A319868B810073761D /* BNRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70F67A219868B810073761D /* BNRWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		E70F678819857DC10073761D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E70F679E19857F140073761D /* BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCoursesViewController.h; sourceTree = "<group>"; };
 		E70F679F19857F140073761D /* BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCoursesViewController.m; sourceTree = "<group>"; };
+		E70F67A119868B810073761D /* BNRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRWebViewController.h; sourceTree = "<group>"; };
+		E70F67A219868B810073761D /* BNRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			children = (
 				E70F679E19857F140073761D /* BNRCoursesViewController.h */,
 				E70F679F19857F140073761D /* BNRCoursesViewController.m */,
+				E70F67A119868B810073761D /* BNRWebViewController.h */,
+				E70F67A219868B810073761D /* BNRWebViewController.m */,
 				E70F678119857DC10073761D /* Images.xcassets */,
 				E70F677619857DC10073761D /* Supporting Files */,
 			);
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70F67A319868B810073761D /* BNRWebViewController.m in Sources */,
 				E70F677C19857DC10073761D /* main.m in Sources */,
 				E70F678019857DC10073761D /* BNRAppDelegate.m in Sources */,
 				E70F67A019857F140073761D /* BNRCoursesViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "BNRAppDelegate.h"
 #import "BNRCoursesViewController.h"
+#import "BNRWebViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -18,6 +19,9 @@
     BNRCoursesViewController *crv = [[BNRCoursesViewController alloc] initWithStyle:UITableViewStylePlain];
     
     UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:crv];
+    
+    BNRWebViewController *wvc = [[BNRWebViewController alloc] init];
+    crv.webViewController = wvc;
     
     self.window.rootViewController = masterNav;
     
